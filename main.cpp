@@ -111,3 +111,75 @@ int main(){
         cout<<endl;
     }
 }
+
+// 7. Hollow half pyramid
+
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout << "Enter the n: ";
+//     cin >> n;
+
+//     for(int row = 0; row < n; row++){
+//         int totalcolumn = row + 1;
+//         for (int col = 0; col < totalcolumn; col++){
+//             if (row == 0 || row == 1 || row == n - 1){
+//                 cout << "* ";
+//             } else { // middle row
+//                 if (col == 0 || col == totalcolumn - 1){
+//                     cout << "* ";
+//                 } else {
+//                     // middle column
+//                     cout << "  "; 
+//                 }
+//             }
+//         }
+//         cout << endl;
+//     }
+
+//     return 0;
+// }
+
+// 8. Hollow inverted half pyramid
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n;
+//     cout << "Enter the n: ";
+//     cin >> n;
+
+//     for (int row = 0; row < n; row++) {
+//         for (int col = 0; col < n - row; col++) {
+//             // Conditions for stars: top row, left edge, and right edge
+//             if (row == 0 || col == 0 || col == n - row - 1) {
+//                 cout << "*";
+//             } else {
+//                 cout << " ";
+//             }
+//         }
+//         cout << endl;
+//     }
+//     return 0;
+// }
+
+// 9. Numeric half pyramid
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cout << "Enter the n: ";
+    cin >> n;
+
+    for(int row= 0; row<n;row++){
+        for(int col= 0;col<row+1;col++){
+            cout<<(col+1)<<"";
+        }
+        cout<<endl;
+    }
+}
+
